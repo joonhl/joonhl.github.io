@@ -1223,7 +1223,7 @@
 
     codePanels.forEach(function(m){
       m.position.y = m.userData.baseY + Math.sin(t*0.8 + m.userData.phase) * 0.22;
-      m.rotation.y += 0.0025;
+      m.rotation.y = Math.sin(t*0.3 + m.userData.phase) * 0.12;
     });
 
     particleSystems.forEach(function(pts){
